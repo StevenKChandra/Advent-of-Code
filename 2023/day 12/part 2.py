@@ -24,8 +24,6 @@ def count_arrangements(row, group):
     
     return count
 
-    
-
 def sum_arrangement(filepath):
     """ """
 
