@@ -129,5 +129,3 @@ def count_energized_tiles(filepath):
 
 if __name__ == "__main__":
     print(count_energized_tiles("input.txt"))
-    # print(count_energized_tiles("test_input.txt"))
-    # print(count_energized_tiles("2023/day 16/test_input.txt"))
