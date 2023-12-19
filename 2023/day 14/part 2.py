@@ -25,7 +25,7 @@ def move_rock_up(rock_position, map, direction):
             y = y + 1
     return map
 
-def sum_arrangement(filepath):
+def calculate_load(filepath):
     """ """
 
     with open(filepath, "r") as f: # open the file
@@ -78,4 +78,4 @@ def sum_arrangement(filepath):
     return total
 
 if __name__ == "__main__":
-    print(sum_arrangement("input.txt"))
+    print(calculate_load("input.txt"))
