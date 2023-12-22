@@ -56,21 +56,18 @@ def count_garden_plot(filepath):
         if len(bricks) == 1 and bricks[0] not in cannot_be_disintegrated:
             cannot_be_disintegrated.append(bricks[0])
     
-    maximum = float("-inf")
+    total_count = 0
     for i in range(len(table)):
         moved_bricks = [i]
         count = 0
         while len(moved_bricks) != count:
             count = len(moved_bricks)
             for key, bricks in dependence.items():
-                if all([brick in moved_bricks for brick in bricks]) and key not in moved_bricks:
+                if bricks != [] and all([brick in moved_bricks for brick in bricks]) and key not in moved_bricks:
                     moved_bricks.append(key)
-        if maximum < count:
-            maximum = count
-    return count
+        total_count += count - 1
+
+    return total_count
 
 if __name__ == "__main__":  
     print(count_garden_plot("input.txt"))
-    # print(count_garden_plot("test_input.txt"))
-    # print(count_garden_plot("2023/day 22/test_input.txt"))
-    # print(count_garden_plot("2023/day 22/input.txt"))
