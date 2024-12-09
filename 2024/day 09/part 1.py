@@ -1,5 +1,4 @@
 with open("2024/day 09/input.txt", "r") as f:
-# with open("2024/day 09/example.txt", "r") as f:
     disk_map = f.read().strip()
 
 spaces = disk_map[1::2]

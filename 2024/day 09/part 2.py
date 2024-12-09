@@ -1,5 +1,4 @@
 with open("2024/day 09/input.txt", "r") as f:
-# with open("2024/day 09/example.txt", "r") as f:
     disk_map = f.read().strip()
 
 spaces = list(map(int,disk_map[1::2]))
@@ -9,11 +8,7 @@ blocks = list(map(int,disk_map[::2]))
 blocks_copy = blocks.copy()
 spaces_copy = spaces.copy()
 
-m = len(spaces)
 n = len(blocks)
-file_ID_front = 0
-file_ID_back = n - 1
-
 
 check_sum = 0
 
