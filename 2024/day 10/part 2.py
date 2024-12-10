@@ -3,11 +3,9 @@ with open("2024/day 10/input.txt", "r") as f:
     map = [[int(x) for x in row] for row in map]
 
 def find_path(i, j, map):
-    visited = set()
     count = 0
     def dfs(i, j, n):
         nonlocal map
-        nonlocal visited
         nonlocal count
         
         if n == 9:
